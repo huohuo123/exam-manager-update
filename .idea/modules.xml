@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/exam-manager.iml" filepath="$PROJECT_DIR$/exam-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exam-manager-rpc/exam-manager-rpc.iml" filepath="$PROJECT_DIR$/exam-manager-rpc/exam-manager-rpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exam-manager-service/exam-manager-service.iml" filepath="$PROJECT_DIR$/exam-manager-service/exam-manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exam-manager-utils/exam-manager-utils.iml" filepath="$PROJECT_DIR$/exam-manager-utils/exam-manager-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exam-manager-web/exam-manager-web.iml" filepath="$PROJECT_DIR$/exam-manager-web/exam-manager-web.iml" />
+    </modules>
+  </component>
+</project>
