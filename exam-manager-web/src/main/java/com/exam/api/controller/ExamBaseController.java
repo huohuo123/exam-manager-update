@@ -21,6 +21,13 @@ public class ExamBaseController {
     @Autowired
     private ExamBaseService examBaseService;
 
+    /**
+     * 基本数据保存
+     * @param examId
+     * @param examName
+     * @param subjectId
+     * @return
+     */
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     public Result<Object> saveExamBase(@RequestParam(name = "examId",required = false) int examId,
                                        @RequestParam(name = "examName",required = false) String examName,
