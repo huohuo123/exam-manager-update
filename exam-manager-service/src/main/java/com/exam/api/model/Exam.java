@@ -1,5 +1,7 @@
 package com.exam.api.model;
 
+import org.beetl.sql.core.annotatoin.AssignID;
+
 import java.io.Serializable;
 
 /**
@@ -8,7 +10,8 @@ import java.io.Serializable;
  * @Date: Create in 11:21 2018/5/22
  */
 
-public class Exam implements Serializable{
+public class Exam implements Serializable {
+
     private Integer examId;
 
     private String examName;
@@ -57,5 +60,16 @@ public class Exam implements Serializable{
 
     public void setEvaluationLevel(Integer evaluationLevel) {
         this.evaluationLevel = evaluationLevel;
+    }
+
+    @Override
+    public String toString() {
+        return "Exam{"
+                + "examId=" + examId +
+                "examName=" + examName +
+                "subjectId=" + subjectId +
+                "score=" + score +
+                "evaluationLevel=" + evaluationLevel +
+                '}';
     }
 }

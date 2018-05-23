@@ -15,7 +15,9 @@ bin/
 .lein*
 .nrepl*
 .checkstyle
+*.class
 rebel.xml
-treasure-rpc/target
-treasure-service/target
-treasure-worker/target
+exam-manager-service/target
+exam-manager-web/target
+exam-manager-utils/target
+exam-manager-rpc/target

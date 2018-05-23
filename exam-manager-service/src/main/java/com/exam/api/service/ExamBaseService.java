@@ -2,6 +2,7 @@ package com.exam.api.service;
 
 import com.exam.api.dao.ExamBaseDao;
 import com.exam.api.model.Exam;
+import org.beetl.sql.core.db.KeyHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,8 +28,8 @@ public class ExamBaseService {
         exam.setExamName(examName);
         exam.setSubjectId(subjectId);
         //beetlsql保存
+        //examBaseDao.saveExamBaseInfo(examName,subjectId);
         examBaseDao.insert(exam);
-
         return true;
     }
 }

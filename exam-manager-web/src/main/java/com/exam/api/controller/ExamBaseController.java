@@ -33,7 +33,7 @@ public class ExamBaseController {
                                        @RequestParam(name = "subjectId",required = false)int subjectId){
         //默认假数据测试
         examName="数学";
-        subjectId=001;
+        subjectId=2;
         return new Result<Object>(examBaseService.saveExamBase(examName,subjectId));
     }
 
