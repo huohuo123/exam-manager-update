@@ -18,14 +18,12 @@ public class ExamBaseService {
 
     /**
      * 基本数据保存
-     * @param examId
      * @param examName
      * @param subjectId
      * @return
      */
-    public boolean saveExamBase(int examId, String examName, int subjectId) {
+    public boolean saveExamBase(String examName, int subjectId) {
         Exam exam = new Exam();
-        exam.setExamId(examId);
         exam.setExamName(examName);
         exam.setSubjectId(subjectId);
         //beetlsql保存

@@ -23,20 +23,18 @@ public class ExamBaseController {
 
     /**
      * 基本数据保存
-     * @param examId
      * @param examName
      * @param subjectId
      * @return
      */
     @RequestMapping(value = "/add",method = RequestMethod.POST)
-    public Result<Object> saveExamBase(@RequestParam(name = "examId",required = false) int examId,
+    public Result<Object> saveExamBase(
                                        @RequestParam(name = "examName",required = false) String examName,
                                        @RequestParam(name = "subjectId",required = false)int subjectId){
         //默认假数据测试
-        examId=01;
         examName="数学";
         subjectId=001;
-        return new Result<Object>(examBaseService.saveExamBase(examId,examName,subjectId));
+        return new Result<Object>(examBaseService.saveExamBase(examName,subjectId));
     }
 
 }
