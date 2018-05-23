@@ -32,7 +32,7 @@ public class ExamBaseController {
     public Result<Object> saveExamBase(@RequestParam(name = "examId",required = false) int examId,
                                        @RequestParam(name = "examName",required = false) String examName,
                                        @RequestParam(name = "subjectId",required = false)int subjectId){
-
+        //默认假数据测试
         examId=01;
         examName="数学";
         subjectId=001;
