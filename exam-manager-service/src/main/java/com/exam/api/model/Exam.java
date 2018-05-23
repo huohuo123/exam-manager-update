@@ -1,12 +1,10 @@
 package com.exam.api.model;
 
-import org.beetl.sql.core.annotatoin.AssignID;
-
 import java.io.Serializable;
 
 /**
  * @Author:HuoYaJing
- * @Description:
+ * @Description:Exam实体
  * @Date: Create in 11:21 2018/5/22
  */
 
