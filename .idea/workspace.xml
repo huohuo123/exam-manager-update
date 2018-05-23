@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc1ef581-eb8e-4fe7-aaa6-4eafb202a2b8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam-manager-web/src/main/java/com/exam/api/controller/ExamBaseController.java" afterPath="$PROJECT_DIR$/exam-manager-web/src/main/java/com/exam/api/controller/ExamBaseController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/exam-manager-utils/target/" />
@@ -43,8 +41,8 @@
       <file leaf-file-name="ExamBaseController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exam-manager-web/src/main/java/com/exam/api/controller/ExamBaseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -307,6 +305,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -422,10 +421,18 @@
       <workItem from="1526894134701" duration="9546000" />
       <workItem from="1526968345846" duration="12038000" />
     </task>
+    <task id="LOCAL-00001" summary="注释添加">
+      <created>1527042556785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527042556785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47884000" />
+    <option name="totallyTimeSpent" value="47944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -465,6 +472,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="注释添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="注释添加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -818,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exam-manager-web/src/main/java/com/exam/api/controller/ExamBaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="270">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
