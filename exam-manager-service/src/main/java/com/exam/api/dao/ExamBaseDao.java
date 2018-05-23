@@ -15,6 +15,12 @@ import org.springframework.stereotype.Repository;
 public interface ExamBaseDao extends BaseMapper<Exam>{
 
 
+    /**
+     * 自动手写sql,对数据库是驼峰还是下划线格式无要求
+     * @param examName
+     * @param subjectId
+     * @return
+     */
     @Sql(type = SqlStatementType.INSERT,value = "insert into exam (exam_name,subject_id) values (?,?)")
     Integer saveExamBaseInfo(String examName, int subjectId);
 }
