@@ -26,6 +26,26 @@ public class DataSourceConfig {
     @Value("${datasource.exam.password}")
     private String examPassword;
 
+    @Value("${datasource.maxActive}")
+    private int maxActive;
+    @Value("${datasource.initialSize}")
+    private int initialSize;
+    @Value("${datasource.maxWaitMillis}")
+    private long maxWaitMillis;
+    @Value("${datasource.minIdle}")
+    private int minIdle;
+    @Value("${datasource.timeBetweenEvictionRunsMillis}")
+    private long timeBetweenEvictionRunsMillis;
+    @Value("${datasource.minEvictableIdleTimeMillis}")
+    private long minEvictableIdleTimeMillis;
+    @Value("${datasource.validationQuery}")
+    private String validationQuery;
+    @Value("${datasource.testWhileIdle}")
+    private boolean testWhileIdle;
+    @Value("${datasource.testOnBorrow}")
+    private boolean testOnBorrow;
+    @Value("${datasource.testOnReturn}")
+    private boolean testOnReturn;
 
 
 
@@ -38,6 +58,17 @@ public class DataSourceConfig {
         druidDataSource.setUsername(examUserName);
         druidDataSource.setPassword(examPassword);
 
+        //druidDataSource配置
+        druidDataSource.setMaxActive(maxActive);
+        druidDataSource.setInitialSize(initialSize);
+        druidDataSource.setMaxWait(maxWaitMillis);
+        druidDataSource.setMinIdle(minIdle);
+        druidDataSource.setTimeBetweenEvictionRunsMillis(timeBetweenEvictionRunsMillis);
+        druidDataSource.setMinEvictableIdleTimeMillis(minEvictableIdleTimeMillis);
+        druidDataSource.setValidationQuery(validationQuery);
+        druidDataSource.setTestWhileIdle(testWhileIdle);
+        druidDataSource.setTestOnBorrow(testOnBorrow);
+        druidDataSource.setTestOnReturn(testOnReturn);
         return druidDataSource;
 
     }
