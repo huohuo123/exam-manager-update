@@ -34,6 +34,7 @@ public class ExamBaseController {
         //默认假数据测试
         examName="数学";
         subjectId=2;
+
         return new Result<Object>(examBaseService.saveExamBase(examName,subjectId));
     }
 
