@@ -1,6 +1,7 @@
 package com.exam.api.jdbc;
 
 import org.beetl.sql.core.ClasspathLoader;
+import org.beetl.sql.core.DefaultNameConversion;
 import org.beetl.sql.core.UnderlinedNameConversion;
 import org.beetl.sql.core.db.MySqlStyle;
 import org.beetl.sql.ext.spring4.BeetlSqlDataSource;
