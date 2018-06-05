@@ -35,8 +35,8 @@ public class ExamBaseService {
         logger.info("saveExamBase examName {}", examName);
         //beetlsql保存
         try {
-            examBaseDao.saveExamBaseInfo(examName,subjectId);
-            //examBaseDao.insert(exam);
+            //examBaseDao.saveExamBaseInfo(examName,subjectId);
+            examBaseDao.insert(exam);
         } catch (Exception e) {
             logger.error("saveExam is error", e);
         }
