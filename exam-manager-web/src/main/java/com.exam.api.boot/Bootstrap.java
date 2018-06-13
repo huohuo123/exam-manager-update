@@ -22,7 +22,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * @Date: Create in 14:37 2018/5/18
  */
 @SpringBootApplication(scanBasePackages = {"com.exam.api"})
-@PropertySource({ "classpath:dev/application.properties" })
+@PropertySource({"classpath:application.properties"})
 @ComponentScan(basePackages = {"com.exam.api"})
 //表示开启AOP代理自动配
 @EnableAspectJAutoProxy
@@ -48,4 +48,6 @@ public class Bootstrap extends WebMvcConfigurerAdapter implements ApplicationCon
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
     }
+
+
 }

@@ -19,7 +19,7 @@ import javax.sql.DataSource;
  * @Date: Create in 18:15 2018/5/21
  */
 @Configuration
-@PropertySource({"classpath:dev/application-db.properties"})
+@PropertySource({"classpath:application-db.properties"})
 public class DataSourceConfig {
 
 

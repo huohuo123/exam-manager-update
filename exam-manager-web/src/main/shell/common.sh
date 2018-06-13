@@ -40,4 +40,4 @@ else
   JAVA="$JAVA_HOME/bin/java"
 fi
 
-MAIN_CLASS="com.pettravel.api.boot.Bootstrap"
+MAIN_CLASS="com.exam.api.boot.Bootstrap"

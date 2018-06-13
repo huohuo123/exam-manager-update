@@ -17,10 +17,10 @@
     <!--RollingFileAppender：滚动记录文件，先将日志记录到指定文件，当符合某个条件时，将日志记录到其他文件-->
     <appender name="info" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.home}/info.log</file>
-        <riollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${log.home}/archives/info.%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>${log.default_max_history}</maxHistory>
-        </riollingPolicy>
+        </rollingPolicy>
         <encoder>
             <pattern>${log.default_pattern}</pattern>
             <charset>${log.default_charset}</charset>
@@ -34,7 +34,7 @@
         <file>${log.home}/error.log</file>
         <!--rollingPolicy:当发生滚动时，决定 RollingFileAppender 的行为，涉及文件移动和重命名-->
         <!--TimeBasedRollingPolicy： 最常用的滚动策略，它根据时间来制定滚动策略，既负责滚动也负责出发滚动-->
-        <rollingPolicy  class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--活动文件的名字会根据fileNamePattern的值，每隔一段时间改变一次-->
             <fileNamePattern>${log.home}/archives/error.%d{yyyy-MM-dd}.log</fileNamePattern>
             <!--每产生一个日志文件，该日志文件的最大保存期限-->
@@ -84,8 +84,8 @@
         <appender-ref ref="request"/>
     </logger>
     <logger name="db_info" level="INFO" additivity="false">
-        <appender-ref ref="db_info" />
-        <appender-ref ref="console" />
+        <appender-ref ref="db_info"/>
+        <appender-ref ref="console"/>
     </logger>
 
 </configuration>
