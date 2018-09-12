@@ -8,7 +8,6 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -25,7 +24,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @PropertySource({"classpath:application.properties"})
 @ComponentScan(basePackages = {"com.exam.api"})
 //表示开启AOP代理自动配
-@EnableAspectJAutoProxy
+//@EnableAspectJAutoProxy
 //启用MVC Java config
 @EnableWebMvc
 //自动开启动态代理配置
