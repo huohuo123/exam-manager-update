@@ -55,6 +55,7 @@ public class DataSourceConfig {
     @Bean(value = "datasource")
     @Primary
     public DataSource getExamDataSource(){
+
         DruidDataSource druidDataSource=new DruidDataSource();
         druidDataSource.setName("datasource");
         druidDataSource.setUrl(examUrl);
